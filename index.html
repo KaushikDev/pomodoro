@@ -1,4 +1,3 @@
-
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,92 +20,85 @@
             color: White;
             text-align: center;
             font-weight:bolder;
-            font-family: 'Shadows Into Light', cursive;
             font-size: 50px;
-            text-shadow: 4px 4px 4px black;
+            text-shadow: 4px 4px 4px gray;
         }
-
         button {
             height: auto;
             width: auto;
             font-weight: bold;
-            font-family: Lobster;
             border-radius: 10px;
             border-style: solid;
             border-color: whitesmoke;
             background-color: black;
             font-size: 40px;
             text-align: center;
-            text-shadow: 4px 4px 4px #aaa;
+            text-shadow: 2px 2px 2px #aaa;
             color: white;
         }
-
         .timerClass {
             height: 200px;
             width: 200px;
-            padding-top: 25%;
             font-weight: bold;
             border-style: dotted;
             border-radius: 50%;
             border-color:white;
             background-color: transparent;
             font-size: 60px;
-            text-shadow: 4px 4px 4px black;
-	    margin: 0 auto;
-	    float: none;
+            text-shadow: 4px 4px 4px gray;
+			padding-top:50px;
+			margin: 0 auto;
+	        float: none;
+			color:white;
+			
         }
     </style>
 
     <div class="container-fuid">
 
-        <div class="row" style="margin-top: 1px;">
+        <div class="row text-center" style="margin-top: 5px;">
             <div class=" col-xs-12">
             <h1>Pomodoro Timer</h1>
         </div>
         </div>
        
-        <div class="row" style="margin-top: 5px;">
-            <div class="col-xs-6" style="text-align:center">
+        <div class="row text-center" style="margin-top: 5px;">
+            <div class="col-xs-6">
                 <button id="startResume" onclick="startResume()">Start</button>
             </div>
 
-            <div class="col-xs-6" style="text-align: center">
+            <div class="col-xs-6">
                 <button id="reset" onclick="reset()">Reset</button>
             </div>
         </div>
         
-        <div class="row" style="margin-top: 5px;">
+        <div class="row text-center" style="margin-top: 5px;">
 
-            <div class="col-xs-12" style="height:auto;text-align: center;">
+            <div class="col-xs-12">
                 <h2 id="label" style="padding-top: 5px;font-family: 'Shadows Into Light', cursive;font-weight:bold;font-size:40px"></h2>
-
             </div>
         </div>
-        <div class="row" style="margin-top: 5px;">
-            <div class="col-xs-4" style="height:auto;text-align: center">
-                
-
+        
+		<div class="row text-center" style="margin-top: 5px;">
+            <div class="col-xs-4">
             </div>
-            <div class="col-xs-4" style="height: auto; width: auto; text-align: center;">
-                <div class="timerClass" id="timer" style="color:white;">-- : --</div>
-
+            
+			<div class="col-xs-4 timerClass" id="timer">
+              <div>-- : --</div>
             </div>
-            <div class="col-xs-4" style="height:auto;text-align: center">
-                
-               
-
+            
+			<div class="col-xs-4">
             </div>
         </div>
-        <div class="row">
-
-            <div class="col-xs-12" style="height:auto;text-align: center">
-                <!--   <input type="text" readonly value="00:60:45" />-->
-
-            </div>
+			
+        <div class="row text-center">
+           <div class="col-xs-12">
+           </div>
         </div>
-        <div class="row">
-            <div class="col-xs-6" style="text-align:center">
-                <label style="color:white;text-shadow: 4px 4px 4px black;">Set Break-Time</label>
+		
+        <div class="row text-center">
+            <div class="col-xs-6">
+                <label style="color:white;text-shadow: 2px 2px 2px gray;">Set Break-Time</label>
                 <div>
                     <button id="minusBT" onclick="minusBT()">-</button>
                     <button id="breakTime">5</button>
@@ -116,8 +108,8 @@
 
             
 
-            <div class="col-xs-6" style="text-align: center">
-                <label style="color:white;text-shadow: 4px 4px 4px black;">Set Pomodoro-Time</label>
+            <div class="col-xs-6">
+                <label style="color:white;text-shadow: 2px 2px 2px gray;">Set Pomodoro-Time</label>
                 <div>
                     <button id="minusP" onclick="minusP()">-</button>
                     <button id="pomodoroTime">25</button>
@@ -125,75 +117,59 @@
                 </div>
             </div>
         </div>
-      <div class="row text-center" style="margin-top:10px;">
-<div class="col-xs-12">
-<p style="font-weight:bold;color:red"><i class="fa fa-copyright" aria-hidden="true"></i>KaushikCodeArts : App by Piyush Kaushik</p>
-</div>
-</div>
-      <div class="row text-center">
+				
+		<div class="row text-center" style="margin-top:10px;">
+            <div class="col-xs-12">
+			<p style="font-weight:bold;color:white"><i class="fa fa-copyright" aria-hidden="true"></i>KaushikCodeArts : App by Piyush Kaushik</p>
+			</div>
+	  </div>
+	  
+		<div class="row text-center">
+
                 <div class="col-xs-12">
 				<a id="fb" class="btn btn-default text-center" style="background-color:transparent;border-color:transparent;" href="https://www.facebook.com/sharer/sharer.php?u=https://KaushikDev.github.io/pomodoroTimer" target="_blank"><i class="fa fa-facebook" aria-hidden="true" style="color:blue;font-size:30px;font-weight:bold;"></i></a>
                 <a id="whatsapp" class="btn btn-default text-center" style="background-color:transparent;border-color:transparent;" href="whatsapp://send?text=https://KaushikDev.github.io/pomodoroTimer"><i class="fa fa-whatsapp" aria-hidden="true" style="color:Green;font-size:30px;font-weight:bold;"></i></a>
         		<a id="tweet" class="btn btn-default text-center" style="background-color:transparent;border-color:transparent;" href="https://twitter.com/home?status=https://KaushikDev.github.io/pomodoroTimer" target="_blank"><i class="fa fa-twitter" aria-hidden="true" style="color:skyblue;font-size:30px;font-weight:bold;"></i></a>
                 </div>
         </div>
+		
     </div>
     <script>
-        // Global Varibales list:
-        //var gloMins=Number(document.getElementById('pomodoroTime').innerHTML)- 1;
-        //var gloSecs=59;
-        //var setTimer = document.getElementById('timer');
-       // var counter;
-        //List ends here.
-
+        
         function startResume() {
             document.getElementById('minusBT').disabled = true;
             document.getElementById('plusBT').disabled = true;
             document.getElementById('minusP').disabled = true;
             document.getElementById('plusP').disabled = true;
             var htmlval = document.getElementById('startResume').innerHTML;
-
             if (htmlval == 'Start') {
                 document.getElementById('startResume').innerHTML = 'Pause';
                 countDownPomodoro();
                
             }
-
-
-
             else if (htmlval == 'Pause') {
                 document.getElementById('startResume').innerHTML = 'Resume';
-
             }
             else if (htmlval == 'Resume') {
                 document.getElementById('startResume').innerHTML = 'Pause';
             }
         }
-
         function countDownPomodoro() {
             var secsPomodoro = 59;
             
             var minsPomodoro = Number(document.getElementById("pomodoroTime").innerHTML) - 1;
             
              var counterPomodoro = setInterval(cleanSlatePomodoro, 1000);
-
              function cleanSlatePomodoro() {
-                 //
-                 //if(document.getElementById('startResume').innerHTML === "Resume"){
-                 //    var some = pauseResume();
-                 //    clearInterval(some);
-                 //}
-                 ////
+                 
                  document.getElementById("timer").innerHTML = minsPomodoro + ":" + secsPomodoro;
                      secsPomodoro--;
-
                      document.getElementById("timer").style.borderColor = "Green";
                      document.getElementById("timer").style.borderStyle = "solid";
                      document.getElementById("timer").style.color = "Green";
                      document.getElementById("label").innerHTML = "Pomodoro Session !!";
                      document.getElementById("label").style.color = "Green";
-                     document.getElementById("label").style.textShadow = '4px 4px 4px black';
-
+                     document.getElementById("label").style.textShadow = '2px 2px 2px gray';
                      if (secsPomodoro <= 0 && minsPomodoro !== 0) {
                          secsPomodoro = 59;
                          minsPomodoro = minsPomodoro - 1;
@@ -202,62 +178,41 @@
                          clearInterval(counterPomodoro);
                          beep();
                          countDownBreak();
-
-
                      }
                  }
-
-                 //here
-                 //addded this code for pause 
-                
-                 //untill here
+                 //here addded this code for pause untill here
             
           
         }
-
-
         function pauseResume() {
-
             while (document.getElementById('startResume').innerHTML === "Resume") {
                 var counterPause = setInterval(pausedPomodoro, 1000);
                 var flag = 1;
                 function pausedPomodoro() {
                     document.getElementById("label").innerHTML = "Paused";
                     document.getElementById("label").style.color = "Violet";
-
                 }
             }
-                //if(flag!=0){
+              
             return counterPause;
-                //}
+              
                
-
         }
-
-
         function countDownBreak() {
             var secsBreak = 59;
           
             var minsBreak = Number(document.getElementById("breakTime").innerHTML) - 1;
-
             var counterBreak = setInterval(cleanSlateBreak, 1000);
-
             function cleanSlateBreak() {
-                //
-                //if(document.getElementById('startResume').innerHTML === "Resume"){
-                //    pauseResume();
-                //}
-                //
+               
                 document.getElementById("timer").innerHTML = minsBreak + ":" + secsBreak;
                 secsBreak--;
-
                 document.getElementById("timer").style.borderColor = "Orange";
                 document.getElementById("timer").style.borderStyle = "solid";
                 document.getElementById("timer").style.color = "Red";
                 document.getElementById("label").innerHTML = "Break Time !!";
                 document.getElementById("label").style.color = "Red";
-                document.getElementById("label").style.textShadow = '4px 4px 4px black';
-
+                document.getElementById("label").style.textShadow = '2px 2px 2px gray';
                 if (secsBreak <= 0 && minsBreak !== 0) {
                     secsBreak = 59;
                     minsBreak = minsBreak - 1;
@@ -267,20 +222,14 @@
                     beep();
                     thanks();
                    
-
                 }
             }
-
-
         }
-
         
-
         function beep() {
             var audio = new Audio('http://soundbible.com/grab.php?id=1377&type=mp3');
             audio.play();
         }
-
         function thanks() {
             document.getElementById("label").innerHTML = "Pomodoro session is over. Thank You :) ";
             document.getElementById("label").style.color = "White";
@@ -290,24 +239,10 @@
             document.getElementById("timer").style.color = "white";
             document.getElementById('startResume').innerHTML = "Start";
         }
-
-
         function reset() {
             window.location.reload(false);
-            //document.getElementById('minusBT').disabled = false;
-            //document.getElementById('plusBT').disabled = false;
-            //document.getElementById('minusP').disabled = false;
-            //document.getElementById('plusP').disabled = false;
-            //document.getElementById('startResume').innerHTML = 'Start';
-            //document.getElementById('breakTime').innerHTML = 5;
-            //document.getElementById('pomodoroTime').innerHTML = 25;
-            //document.getElementById("timer").style.borderColor = "black";
-            //document.getElementById("timer").style.borderStyle = "dotted";
-            //document.getElementById("timer").style.color = "black";
-            //document.getElementById("timer").innerHTML = "-- : --";
-
+          
         }
-
         function minusBT() {
             //  val = val.toString();
             var btVal = Number(
@@ -341,12 +276,10 @@
             }
             document.getElementById('pomodoroTime').innerHTML = btVal;
         }
-
-
-
-
-
     </script>
 
 </body>
 </html>
+
+
+
