@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="jquery-3.2.1.min.js"></script>
     <script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 
 
 
@@ -18,76 +19,20 @@
 <body style="background-color: black;">
     <style>
      
-		
-		h2{
-		padding-top: 5px;font-family: 'Shadows Into Light', cursive;font-weight:bold;
-		}
-        button {
-            height: auto;
-            width: auto;
-            font-weight: bold;
-            border-radius: 10px;
-            border-style: solid;
-            border-color: white;
-            background-color: black;
-            font-size: 40px;
-            text-align: center;
-            text-shadow: 2px 2px 2px #aaa;
-            color: white;
-			font-family: 'Shadows Into Light';
-        }
-        .timerClass {
-            height:200px;
-            width: 200px;
-            font-weight: bold;
-            border-style: dotted;
-            border-radius: 50%;
-            border-color:white;
-            background-color: transparent;
-            font-size: 60px;
-            text-shadow: 4px 4px 4px gray;
-			padding-top:50px;
-			margin: 0 auto;
-	        float: none;
-			color:white;
-		}
-		
-		.fa-facebook, .fa-twitter, .fa-whatsapp, .fa-copyright{
-			color:white;font-size:auto;
-		}
-		
-		#setBreakTime,#setPomodoroTime{
-		color:white;text-shadow: 2px 2px 2px gray;font-family: 'Shadows Into Light';
-		}
-		
-		#fb,#whatsapp,#tweet{
-		background-color:transparent;border-color:transparent;font-family: 'Shadows Into Light';
-		}
-		
-		#header{
-		height:10%;background-color:gray;
-		}
-		#footer{
-		height:10%;background-color:gray;
-		}
-		#body{
-		height:80%;margin-top:25px;
-		}
-		
-		 
+	
     </style>
 
-    <div class="container-fuid" id="header">
+    <!-- <div class="container-fuid" id="header">
 	    <div class="row text-center">
 				<div class="col-xs-12">
 					<a href="https://kaushikdev.github.io/portfolio/" target="_blank" style="color:white;"><i class="fa fa-copyright"></i>KaushikCodeArts 2018</a>
 				</div>
 		</div>
-	</div>
+	</div> -->
         
 		
 	<div class="container-fuid" id="body">	
-        <div class="row text-center">
+        <div id="mainControlButtons" class="row text-center">
             <div class="col-xs-6">
                 <button id="startResume" onclick="startResume()">Start</button>
             </div>
@@ -100,7 +45,7 @@
         <div class="row text-center">
 
             <div class="col-xs-12">
-                <h2 id="label">Click Start To Run Timer</h2>
+                <h2 id="label">Click Start To Run Pomodoro Session</h2>
             </div>
         </div>
         
@@ -116,9 +61,9 @@
             </div>
         </div>
 			
-        <div class="row text-center" style="margin-top:50px;">
+        <div id="mainTimerButtons" class="row text-center">
             <div class="col-xs-6">
-                <label id="setBreakTime">Set Break-Time</label>
+                <label id="setBreakTime">Break-Time</label>
                 <div>
                     <button id="minusBT" onclick="minusBT()">-</button>
                     <button id="breakTime">5</button>
@@ -129,7 +74,7 @@
             
 
             <div class="col-xs-6">
-                <label id="setPomodoroTime">Set Pomodoro-Time</label>
+                <label id="setPomodoroTime">Work-Time</label>
                 <div>
                     <button id="minusP" onclick="minusP()">-</button>
                     <button id="pomodoroTime">25</button>
@@ -139,20 +84,20 @@
         </div>
 	</div>	
 		
-	<div class="container-fuid" id="footer">		
+	<div class="container-fluid" id="footer">		
 		<div class="row text-center">
 
-                <div class="col-xs-4">
-				<a id="fb" class="btn btn-default text-center" href="https://www.facebook.com/sharer/sharer.php?u=https://KaushikDev.github.io/pomodoroTimer" target="_blank"><i class="fa fa-facebook"></i></a>
+                <div class="col-xs-6">
+                <a id="fb" class="btn btn-default text-center" href="https://www.facebook.com/sharer/sharer.php?u=https://KaushikDev.github.io/pomodoroTimer" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a id="whatsapp" class="btn btn-default text-center" href="whatsapp://send?text=https://KaushikDev.github.io/pomodoroTimer"><i class="fa fa-whatsapp"></i></a>
+                <a id="tweet" class="btn btn-default text-center" href="https://twitter.com/home?status=https://KaushikDev.github.io/pomodoroTimer" target="_blank"><i class="fa fa-twitter"></i></a>
 				</div>
 				
-                <div class="col-xs-4">
-				<a id="whatsapp" class="btn btn-default text-center" href="whatsapp://send?text=https://KaushikDev.github.io/pomodoroTimer"><i class="fa fa-whatsapp"></i></a>
+                <div class="col-xs-6">
+                    <a href="https://kaushikdev.github.io/portfolio/" target="_blank" style="color:limegreen;">Developer Portfolio</a>
 				</div>
 				
-        		<div class="col-xs-4">
-				<a id="tweet" class="btn btn-default text-center" href="https://twitter.com/home?status=https://KaushikDev.github.io/pomodoroTimer" target="_blank"><i class="fa fa-twitter"></i></a>
-                </div>
+        		
         </div>
 	</div>
 	

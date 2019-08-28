@@ -1,0 +1,77 @@
+h2 {
+  font-family: "Shadows Into Light", cursive;
+  color: white;
+  font-size: 1em;
+}
+
+button {
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: aqua;
+  background-color: black;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 2px #aaa;
+  color: white;
+  font-family: "Shadows Into Light";
+}
+.timerClass {
+  height: 200px;
+  width: 200px;
+  font-weight: bold;
+  border-style: dotted;
+  border-radius: 50%;
+  border-color: aqua;
+  background-color: transparent;
+  font-size: 60px;
+  text-shadow: 4px 4px 4px gray;
+  padding-top: 50px;
+  margin: 0 auto;
+  float: none;
+  color: white;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-whatsapp,
+.fa-copyright {
+  color: limegreen;
+  font-size: auto;
+}
+
+#setBreakTime,
+#setPomodoroTime {
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #fff;
+  font-family: "Shadows Into Light";
+}
+
+#fb,
+#whatsapp,
+#tweet {
+  background-color: transparent;
+  border-color: transparent;
+  font-family: "Shadows Into Light";
+}
+
+#footer {
+  margin-top: 5px;
+    height:5vh;
+  width: 99%;
+
+}
+#body {
+   margin-top: 25px;
+   height:85vh;
+}
+
+/* #mainControlButtons{
+margin-bottom: 50px;
+}
+#mainTimerButtons{
+margin-top: 75px;
+} */

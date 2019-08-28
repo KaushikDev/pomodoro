@@ -27,12 +27,12 @@
                  
                  document.getElementById("timer").innerHTML = minsPomodoro + ":" + secsPomodoro;
                      secsPomodoro--;
-                     document.getElementById("timer").style.borderColor = "Green";
+                     document.getElementById("timer").style.borderColor = "yellow";
                      document.getElementById("timer").style.borderStyle = "solid";
-                     document.getElementById("timer").style.color = "Green";
+                     document.getElementById("timer").style.color = "yellow";
                      document.getElementById("label").innerHTML = "Pomodoro Session !!";
-                     document.getElementById("label").style.color = "Green";
-                     document.getElementById("label").style.textShadow = '2px 2px 2px gray';
+                     document.getElementById("label").style.color = "yellow";
+                     document.getElementById("label").style.textShadow = '2px 2px 2px #fff';
                      if (secsPomodoro <= 0 && minsPomodoro !== 0) {
                          secsPomodoro = 59;
                          minsPomodoro = minsPomodoro - 1;
@@ -70,12 +70,12 @@
                
                 document.getElementById("timer").innerHTML = minsBreak + ":" + secsBreak;
                 secsBreak--;
-                document.getElementById("timer").style.borderColor = "Orange";
+                document.getElementById("timer").style.borderColor = "Red";
                 document.getElementById("timer").style.borderStyle = "solid";
                 document.getElementById("timer").style.color = "Red";
                 document.getElementById("label").innerHTML = "Break Time !!";
                 document.getElementById("label").style.color = "Red";
-                document.getElementById("label").style.textShadow = '2px 2px 2px gray';
+                document.getElementById("label").style.textShadow = '1px 1px 1px #fff';
                 if (secsBreak <= 0 && minsBreak !== 0) {
                     secsBreak = 59;
                     minsBreak = minsBreak - 1;
