@@ -59,13 +59,13 @@ button {
 }
 
 #footer {
-  margin-top: 5px;
-    height:5vh;
+  height:2vh;
   width: 99%;
 
 }
 #body {
    margin-top: 25px;
+   margin-bottom: 25px;
    height:85vh;
 }
 

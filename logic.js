@@ -30,7 +30,7 @@
                      document.getElementById("timer").style.borderColor = "yellow";
                      document.getElementById("timer").style.borderStyle = "solid";
                      document.getElementById("timer").style.color = "yellow";
-                     document.getElementById("label").innerHTML = "Pomodoro Session !!";
+                     document.getElementById("label").innerHTML = "Work session in progress !!";
                      document.getElementById("label").style.color = "yellow";
                      document.getElementById("label").style.textShadow = '2px 2px 2px #fff';
                      if (secsPomodoro <= 0 && minsPomodoro !== 0) {
@@ -73,7 +73,7 @@
                 document.getElementById("timer").style.borderColor = "Red";
                 document.getElementById("timer").style.borderStyle = "solid";
                 document.getElementById("timer").style.color = "Red";
-                document.getElementById("label").innerHTML = "Break Time !!";
+                document.getElementById("label").innerHTML = "Break session in progress !!";
                 document.getElementById("label").style.color = "Red";
                 document.getElementById("label").style.textShadow = '1px 1px 1px #fff';
                 if (secsBreak <= 0 && minsBreak !== 0) {
